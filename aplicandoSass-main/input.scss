@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* ******************** EMPIEZA INDEX **************** */
+  
+  
+  /*------header-----*/
+  
+  .barraSuperior {
+    height: 10vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b0b0b;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  
+  }
+  
+  .logo img {
+    width: 8vw;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav li {
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav{
+    background-color: #000000;
+  }
+  
+  .navbar-toggler{
+    background-color: #F1BE9F;
+  }
+  
+  .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  
+  /*------Main------*/
+  
+  .contenedorMain {
+    height: 100vh;
+    background-image: url(../Archivos/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title h1 {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    text-shadow: 0px 3px 5px #000;
+  
+  }
+  
+  .contacto {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contacto h2 {
+    background-color: #20c2f8;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    border-radius: 60px;
+  }
+  
+  .contacto a {
+    text-decoration: none;
+    color: #F1BE9F;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  .social a {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  
+  .social a img {
+    width: 3vw;
+  }
+  
+  
+  .footer {
+    height: 10vh;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*MEDIA QUERYS INDEX*/
+  
+  /*LAPTOP*/
+  
+  @media (max-width: 1024px) {
+  
+    .contenedorMain {
+      height: 70vh;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  
+  /*TABLET*/
+  
+  @media (max-width: 768px) {
+  
+    .logo img {
+      width: 12vw;
+    }
+  
+    .contenedorMain {
+      height: 55vh;
+    }
+  
+  
+    .social a img {
+      width: 5vw;
+    }
+  }
+  
+  /*MOBILE BIG*/
+  
+  @media (max-width: 425px) {
+  
+    .logo img {
+      width: 18vw;
+  }
+  
+    .contenedorMain {
+      height: 40vh;
+      background-size: 120vw;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .title h1 {
+      font-size: 8vw; 
+    }
+  
+    .contacto h2 {
+      margin-top: 1em;
+      padding: 1em;
+      font-size: 3vw;
+      border-radius: 60px;
+    }
+  
+    .miMusica {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .contenedorSC iframe {
+      width: 40vw;
+      height: 20vh;
+    }
+    
+    .nota {
+      font-size: 4vw;
+      padding-left: 2em;
+      padding-right: 2em;
+      text-align: center
+    }
+  
+    .social a img {
+      width: 7vw;
+    }
+  }
+  
+  /*MOBILE SMALL*/
+  
+  @media (max-width: 375px){
+  
+    .logo img {
+      width: 22vw;
+    }
+  
+    .contenedorMain {
+      height: 60vh;
+      background-size: 200vw;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .contenedorSC iframe {
+      width: 60vw;
+      height: 20vh;
+    }
+  
+    .footer {
+      height: 25vh;
+    }
+  
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .social a {
+      padding-top: 1.5em;
+    }
+  
+    .social a img {
+      width: 13vw;
+    }
+  }
+  
+  
+  /* ------------ APAISADO-------------*/
+  
+  @media (max-height: 650px) {
+  
+    .logo img {
+      width: 10vh;
+    }
+  
+    .navbar-nav{
+      background-color: #000000;
+      height: 0;
+    }
+  }
+  
+  
+  /* *Index */
+  
+  
+  /*<-Galeria-->*/
+  
+  
+  .Nav {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+  }
+  
+  .Nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .Nav li {
+    padding: 1em;
+  }
+  
+  .Nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .galeriaMain {
+    background-color: #0c9f93;
+  }
+  
+  
+  .galeria img {
+    box-shadow: 0 8px 10px -4px rgba(0, 0, 0, .6);
+    border-radius: 1em;
+  }
+  
+  
+  .galeria .col {
+    margin-top: 1.5em;
+  }
+  
+  
+ 
